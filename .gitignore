@@ -1,4 +1,6 @@
-node_modules
+node_modules/
 npm-debug.log
-src/app/**/*.js
-src/app/**/*.js.map
+app/**/*.js
+app/**/*.js.map
+.idea/
+typings/
