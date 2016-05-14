@@ -1,21 +1,27 @@
 <html>
 <head>
-  <title>Angular 2 QuickStart</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
-  <!-- 1. Load libraries -->
-  <!-- Polyfill(s) for older browsers -->
-  <script src="https://rumblex.s3.amazonaws.com/starter/es6-shim/es6-shim.min.js"></script>
-  <script src="https://rumblex.s3.amazonaws.com/starter/zone.js/dist/zone.js"></script>
-  <script src="https://rumblex.s3.amazonaws.com/starter/reflect-metadata/Reflect.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 
-  <script src="https://rumblex.s3.amazonaws.com/starter/systemjs/dist/system.src.js"></script>
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://rumblex.s3.amazonaws.com/starter/es6-shim/es6-shim.min.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/zone.js/dist/zone.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/reflect-metadata/Reflect.js"></script>
 
-  <!-- 2. Configure SystemJS -->
-  <script src="systemjs.config.js"></script>
-  <script src="systemjsbundle.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script src="systemjsbundle.js"></script>
 </head>
 
 <!-- 3. Display the application -->
@@ -23,7 +29,9 @@
 <my-app>Loading...</my-app>
 
 <script>
-  System.import('app').catch(function(err){ console.error(err); });
+    System.import('app').catch(function (err) {
+        console.error(err);
+    });
 </script>
 </body>
 </html>
