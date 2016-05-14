@@ -33,7 +33,7 @@ import {MqttService} from "../mqtt-service/mqttService";
     `
 })
 export class MqttSourceComponent {
-    connection = new Connection("", 1883, "");
+    connection = new Connection("test.mosquitto.org", 1883, "temp/random");
     
     constructor(private mqttService: MqttService) {}
 
