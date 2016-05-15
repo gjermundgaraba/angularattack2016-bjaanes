@@ -1,10 +1,37 @@
 # MQTT Dashboard
 
-An MQTT Dashboard for developed during Angular Attack 2016.
+An MQTT Dashboard developed during Angular Attack 2016.
 
 It allows you to monitor any MQTT topics in real time from anywhere (as long as they are available online)
 
-SCREENSHOT
+![Screenshot](https://raw.githubusercontent.com/rumblex/angularattack2016-bjaanes/master/readme-images/Screenshot.png?token=ABSCaRbvAhFT-EnEtGnQu3_xmU7bVfUcks5XQfICwA%3D%3D "Screenshot")
+
+## Demo
+
+To demo this app, take a look at the site where this app was deployed during the hackathon:
+http://bjaanes.2016.angularattack.io/
+
+There are a few topics which can be connected to that will demonstrate how the app works:
+Host: test.mosquitto.org
+Port: 1883
+
+Topic: bjaanes/mock/home/temperature
+Random numbers meant to demonstrate temperature readings from a sensor
+
+Topic: bjaanes/mock/street/car-speed
+Random numbers mean to demonstrate a sensor showing speed of passing cars in your street
+
+Topic: bjaanes/mock/random10k
+Random numbers between 0 and 10000
+
+
+You can also use any MQTT broker and topics you wish to use, but these should be populated every second or so with data.
+You could for instance download MQTTfx, which is an MQTT client that allows you to connect to brokers and send data.
+http://www.jensd.de/apps/mqttfx/
+
+You can use any online available brokers to test this, for instance:
+* test.mosquitto.org
+* iot.eclipse.org
 
 ## Introduction to the project
 
@@ -27,8 +54,7 @@ You also need a message broker to control the flow of all these messages.
 In this case, the MQTT Dashboard can subscribe to many different brokers and topics at will.
 
 A typical diagram of the MQTT architecture will look something like this:
-
-IMAGE
+![MQTT Architecture](https://raw.githubusercontent.com/rumblex/angularattack2016-bjaanes/master/readme-images/mqttdiagram.png?token=ABSCaR9n9dMfCKrFe0aRuBVWpx3JfhMyks5XQfImwA%3D%3D "MQTT Architecture")
 
 For a little more information about MQTT and how I used it, take a look at a previous blog post I did about the subject:
 http://gjermundbjaanes.com/smart-home-series-part-1-learning-mqtt-and-buying-stuff/
@@ -44,7 +70,7 @@ https://github.com/bjaanes/mqtt-ws
 
 The architecture for the app then looks something like this:
 
-IMAGE
+![MQTT Dashboard Architecture](https://raw.githubusercontent.com/rumblex/angularattack2016-bjaanes/master/readme-images/general-architecture.png?token=ABSCabtpsv6h-7TOZPzU5DW_ceyUQ53Eks5XQfJWwA%3D%3D "MQTT Dashboard Architecture")
 
 
 ### What makes it special?
