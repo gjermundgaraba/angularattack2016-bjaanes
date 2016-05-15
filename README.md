@@ -100,6 +100,7 @@ The following improvements were considered but did not make it into the app duri
 * Support different types of output from topics (text for instance)
 * Different types of graphs for each MQTT topic
 * Send MQTT messages to different topics and brokers in the app
+* Add more information to a source connection (like units for data)
 * More in-app help
 
 ## Development
