@@ -61,7 +61,7 @@ http://gjermundbjaanes.com/smart-home-series-part-1-learning-mqtt-and-buying-stu
 
 ### How does it work?
 
-The biggest technical challenge related to this app is the fact that most (some do, but that is not the most usual today) MQTT brokers do no support Websockets and browsers do not support MQTT.
+The biggest technical challenge related to this app is the fact that most MQTT brokers do no support Websockets (some do, but that is not the most common today) and browsers do not support MQTT.
 
 To solve this problem the app uses an MQTT Websocket bridge as it's backend. That means that the MQTT Dashboard connects to the backend with websockets, which deals with all the MQTT business that the browser cannot.
 
