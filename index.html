@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdn.ravenjs.com/3.0.4/raven.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 
     <!-- 1. Load libraries -->
@@ -31,6 +32,7 @@
 <my-app>Loading MQTT Dashboard</my-app>
 
 <script>
+    Raven.config('https://686dd023b42b4eaeb5b71f6c5a4a8b97@app.getsentry.com/78363').install();
     System.import('app').catch(function (err) {
         console.error(err);
     });

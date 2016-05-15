@@ -10,22 +10,23 @@ import {MqttService} from "../mqtt-service/mqttService";
                 <div class="row">
                     <form class="col s12" (ngSubmit)="connect()">
                         <div class="row">
-                            <div class="input-field col s5">
+                            <div class="input-field col m5 s6">
                                 <input id="host" type="text" class="validate" [(ngModel)]="connection.host" required>
                                 <label for="host" class="active">Host</label>
                             </div>
-                            <div class="input-field col s2">
+                            <div class="input-field col m2 s6">
                                 <input id="port" type="number" class="validate" [(ngModel)]="connection.port" required>
                                 <label for="port" class="active">Port</label>
                             </div>
-                            <div class="input-field col s4">
-                                <input id="topic" type="text" class="validate" [(ngModel)]="connection.topic" required>
+                            <div class="input-field col m4 s6">
+                                <input id="topic" type="text" class="validate" [(ngModel)]="connection.topic" pattern="[^#]+" required>
                                 <label for="topic" class="active">Topic</label>
                             </div>
-                            <div class="input-field col s1">
+                            <div class="input-field col m1 s6">
                                 <button class="waves-effect waves-light btn" [disabled]="loading">Connect</button>
                             </div>
                         </div>
+                        * NOTE: Wildcard topics and topics with anything else than numbers are not supported
                     </form>
                     <div class="progress" *ngIf="loading">
                         <div class="indeterminate"></div>
